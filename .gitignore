@@ -7,3 +7,5 @@ raw_data/
 **/__pycache__/
 .env
 *.jpg
+notebooks/bdd100k_labels_images_train.json
+notebooks/bdd100k_labels_images_train.json:Zone.Identifier
