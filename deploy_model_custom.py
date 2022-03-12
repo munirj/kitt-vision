@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 import cv2
-import pafy
+# import pafy
 from time import time
 
 
@@ -101,7 +101,8 @@ class ObjectDetection:
         assert player.isOpened()
         x_shape = int(player.get(cv2.CAP_PROP_FRAME_WIDTH))
         y_shape = int(player.get(cv2.CAP_PROP_FRAME_HEIGHT))
-        four_cc = cv2.VideoWriter_fourcc(*"MJPG")
+        # four_cc = cv2.VideoWriter_fourcc(*"MJPG")
+        four_cc = cv2.VideoWriter_fourcc(*"MP4V")
         out = cv2.VideoWriter(self.out_file, four_cc, 20, (x_shape, y_shape))
         while True:
             start_time = time()
@@ -117,7 +118,7 @@ class ObjectDetection:
 
 
 # Create a new object and execute.
-detection = ObjectDetection('kitt-vision/models/20220311.pt', \
-                'kitt-vision/input_vids/test_road_vid.mp4', \
-                'kitt-vision/output_vids/my_video_road_20220311.avi')
-detection()
+# detection = ObjectDetection('models/20220311.pt', \
+#                 'input_vids/test_road_vid.mp4', \
+#                 'output_vids/my_video_road_20220311.mp4')
+# detection()
