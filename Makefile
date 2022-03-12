@@ -53,3 +53,7 @@ pypi_test:
 
 pypi:
 	@twine upload dist/* -u $(PYPI_USERNAME)
+
+
+streamlit_kitt:
+	-@streamlit run kitt_sl.py
