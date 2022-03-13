@@ -34,4 +34,4 @@ opencv-python
 matplotlib
 seaborn
 torchvision
-os
+ffmpeg
